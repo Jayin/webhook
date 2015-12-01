@@ -3,8 +3,8 @@
 $TOKEN = 'duoshuang';
 $GIT_REPO_DIR_MASTER = '/var/www/html/duoshuang';
 $GIT_REPO_DIR_DEVELOP = '/var/www/html/test/duoshuang';
-$BRANCH_MASTER = 'master'; //tracking branch
-$BRANCH_DEVELOP = 'master'; //tracking branch
+$BRANCH_MASTER = 'master'; //production
+$BRANCH_DEVELOP = 'develop'; //dev
 
 $Data = json_decode(file_get_contents('php://input'));
 
