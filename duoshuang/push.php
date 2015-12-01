@@ -18,12 +18,12 @@ shell_exec("echo '\r\n Event:".$Data->event."' >> log.txt");
 
 if($Data->ref === $BRANCH_MASTER && $Data->event === 'push'){
     shell_exec("cd ".$GIT_REPO_DIR_MASTER.' && git pull origin '.$BRANCH_MASTER);
-    exit('Finish!');
+    exit('Finish pull '.$BRANCH_MASTER);
 }
 
 if($Data->ref === $BRANCH_DEVELOP && $Data->event === 'push'){
     shell_exec("cd ".$GIT_REPO_DIR_DEVELOP.' && git pull origin '.$BRANCH_DEVELOP);
-    exit('Finish!');
+    exit('Finish pull '.$BRANCH_DEVELOP);
 }
 
 exit('no any work =,=!');
