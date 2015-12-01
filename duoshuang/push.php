@@ -25,3 +25,5 @@ if($Data->ref === $BRANCH_DEVELOP && $Data->event === 'push'){
     shell_exec("cd ".$GIT_REPO_DIR_DEVELOP.' && git pull origin '.$BRANCH_DEVELOP);
     exit('Finish!');
 }
+
+exit('no any work =,=!')
