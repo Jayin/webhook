@@ -26,4 +26,4 @@ if($Data->ref === $BRANCH_DEVELOP && $Data->event === 'push'){
     exit('Finish!');
 }
 
-exit('no any work =,=!')
+exit('no any work =,=!');
