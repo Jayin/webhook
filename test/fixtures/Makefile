@@ -1,2 +1,2 @@
 main:
-	echo "1" >> tmp.txt
+	echo "12" >> tmp.txt

@@ -4,21 +4,29 @@ var child_process = require('child_process')
 
 /* GET home page. */
 router.post('/handle/coding/push', function(req, res, next) {
-  // console.log(res)
-  console.log(req.body)
-  // res.send({a: req.params.platform})
-  // res.send(req.body)  
   if(req.body.event.toLowerCase() === 'push'){
     console.info('this is a push action!')
     var config = require('../webhooks/'+req.body.repository.name+'.conf.json')
     if(config.repo !== req.body.repository.https_url || config.branch !== req.body.repository.name){
-      console.info('匹配conf.json成功!')
-      console.log('==>'+config.script)
-      var result = child_process.execSync(config.script, {encoding: 'utf-8'})
-      console.log(result)
+      // console.info('匹配conf.json成功!')
+      // console.log('==>'+config.script)
+      // var result = child_process.execSync(config.script, {encoding: 'utf-8'})
+      child_process.exec(config.script, {encoding: 'utf-8'},function(err, stdout, stderr){
+        if(err){
+          // console.log('err!!')
+          // console.log(err)
+          res.status(400).json({
+            msg: 'cmd:'+err.cmd + ' NOT work!'
+          })
+          return
+        }
+        res.status(200).json({
+          msg: 'ok'
+        })      
+      })
     }
   }
-  res.send('test')
+  
 });
 
 
