@@ -15,5 +15,9 @@
     "lodash": "^4.5.1",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "should": "^8.2.2",
+    "superagent": "^1.7.2"
   }
 }
