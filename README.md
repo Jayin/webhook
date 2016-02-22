@@ -2,10 +2,16 @@
 
 - dev
 ```shell
-make development
+$ make development
 ```
 
 - production
 ```shell
-make production
+$ make production
+```
+
+## test
+
+```shell
+$ make test
 ```
