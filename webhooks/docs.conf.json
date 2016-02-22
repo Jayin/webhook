@@ -1,5 +1,0 @@
-{
-   "repo": "https://github.com/EManual/docs",
-   "branch": "master",
-   "script": "cd ~/dev/my/webhook/test/fixtures && make"
-}

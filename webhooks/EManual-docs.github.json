@@ -1,0 +1,6 @@
+{
+   "platform": "github",
+   "https_url": "https://github.com/EManual/docs.git",
+   "branch": "changes",
+   "script": "cd ~/dev/my/webhook/test/fixtures && make"
+}

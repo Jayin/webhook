@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/EManual/docs.git",
+   "branch": "master",
+   "script": "cd ~/dev/my/webhook/test/fixtures && make"
+}
+
