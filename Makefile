@@ -1,10 +1,10 @@
 default: production
 
 development: 
-	NODE_ENV=development ./bin/www
+	DEBUG=webhook:server PORT=3000 NODE_ENV=development ./bin/www
 	
 production:
-	NODE_ENV=production ./bin/www
+	PORT=3000 NODE_ENV=production ./bin/www
 	
 test:
 	@mocha --recursive --timeout 5000 --require should  ./test/**/*.test.js
