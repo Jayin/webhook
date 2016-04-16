@@ -21,7 +21,8 @@ router.post('/handle/:platform/push', function (req, res, next) {
           return
         }
         res.status(200).json({
-          msg: 'ok'
+          msg: 'ok',
+          match: config
         })
       })
     } else {
