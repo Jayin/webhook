@@ -1,10 +1,10 @@
 {
   "after": "daf52219b26f79ebb4e7fe367654975a141d8235",
-  "ref": "master",
+  "ref": "dev",
   "repository": {
-    "https_url": "https://github.com/XXX/docs.git",
+    "https_url": "https://git.coding.net/wys/docs.git",
     "description": "EManual docs",
-    "web_url": "https://github.com/XXX/docs",
+    "web_url": "https://github.com/wys/docs",
     "name": "docs",
     "project_id": "37915",
     "owner": {

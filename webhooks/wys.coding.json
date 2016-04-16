@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/wys/docs.git",
+   "branch": "*",
+   "script": "cd ~/dev/my/webhook/test/fixtures && make"
+}
+

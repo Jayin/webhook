@@ -38,6 +38,18 @@ describe('Coding PUSH', function () {
       })
   });
   
+  it('branch=*时匹配所有', function(done){
+     superagent
+      .post('http://localhost:3001/handle/coding/push')
+      .send(require('./fixtures/coding.post3.json'))
+      .end(function (err, res) {
+        console.log(res.body)
+        should.not.exist(err)
+        res.should.have.properties({statusCode: 200})
+        done()
+      })
+  })
+  
   after(function (done) {
     server.close(function(){
       done()

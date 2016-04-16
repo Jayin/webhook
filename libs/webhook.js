@@ -17,15 +17,25 @@ function load_config(){
   })
   return configs 
 }
-
-
+/**
+ * 获取webhook配置
+ * @param {string} platform 平台
+ * @param {string} https_url 仓库地址
+ * @param {string} branch 分支
+ */
 module.exports.getWebhookConfig = function (platform, https_url, branch) {
   var configs = load_config()
   for (var index = 0;index < configs.length;index++) {
     var config = configs[index]
-    if (config.platform === platform && config.https_url === https_url && config.branch === branch) {
-      return config
+    
+    if(config.platform !== platform || config.https_url !== https_url){
+      continue;
     }
+    //branch 监听处理的分支，若为*则匹配所有分支
+    if ( config.branch !== '*' && config.branch !== branch) {
+      continue
+    }
+    return config
   }
   return null
 }
