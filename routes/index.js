@@ -2,6 +2,8 @@ var express = require('express')
 var router = express.Router()
 var child_process = require('child_process')
 var webhook = require('../libs/webhook')
+var fs = require('fs')
+var pkg = require('../package.json')
 
 router.post('/handle/:platform/push', function (req, res, next) {
   var platform = req.params.platform
@@ -31,6 +33,16 @@ router.post('/handle/:platform/push', function (req, res, next) {
       })
     }
   }
+})
+
+//version and webhook config
+router.get('/info', function (req, res, next){
+  var configs = webhook.load_config();
+  console.log(webhook.load_config())
+  res.status(200).json({
+    version: pkg.version,
+    configs: configs
+  })
 })
 
 module.exports = router

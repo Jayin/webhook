@@ -55,3 +55,5 @@ module.exports.getWebhookConfig = function (platform, https_url, branch) {
 module.exports.parsePlatform = function(platform, req){
   return Platform[platform].parse(req)
 }
+
+module.exports.load_config = load_config;
