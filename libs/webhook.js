@@ -2,6 +2,7 @@ var glob = require('glob')
 var path = require('path')
 var _ = require('lodash')
 var Platform = require('./platform')
+var fs = require('fs')
 
 /**
  * 加载配置
@@ -12,7 +13,7 @@ function load_config(){
   var files = glob.sync(path.join(__dirname, '../webhooks/**/*.json'))
 
   files.forEach(function (file) {
-    var config = require(file)
+    var config = JSON.parse(fs.readFileSync(file))
     configs.push(config)
   })
   return configs 
