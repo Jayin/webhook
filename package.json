@@ -11,12 +11,12 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "glob": "^7.0.0",
-    "jade": "~1.11.0",
     "lodash": "^4.5.1",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "ejs": "^2.4.2",
     "should": "^8.2.2",
     "superagent": "^1.7.2"
   }
