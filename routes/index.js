@@ -38,7 +38,7 @@ router.post('/handle/:platform/push', function (req, res, next) {
 //version and webhook config
 router.get('/info', function (req, res, next){
   var configs = webhook.load_config();
-  res.status(200).json({
+  res.render('info', {
     version: pkg.version,
     configs: configs
   })

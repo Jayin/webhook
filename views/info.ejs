@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>配置状态</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="width: 600px; margin-top: 40px;">
+        <div class="row">
+            <div class="col-xs-12">
+                
+                <section class="text-center" style="padding: 10px;">
+                    <h4>配置列表</h4>
+                </section>
+
+                <% configs.forEach(function(config){ %>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">平台: <%= config.platform %></h3>
+                        </div>
+                        <div class="panel-body">
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <span>分支</span>
+                                    <span class="badge"><%= config.branch %></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>项目https_url</span>
+                                    <span class="badge"><%= config.https_url %></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <span>脚本</span>
+                                    <span class="badge"><%= config.script %></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <% }); %>
+
+                <section class="text-center" style="padding: 10px;">
+                    <p> Power by <a href="">Jayin/webhook</a> v<%= version %></p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
