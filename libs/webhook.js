@@ -15,7 +15,8 @@ function load_config() {
   files.forEach(function (file) {
     var config = JSON.parse(fs.readFileSync(file))
     //append the file in to config
-    config['file'] = file
+    config['file'] = path.basename(file) //文件名
+    config['file_path'] = file  //文件路径
     configs.push(config)
     console.log('load config: ' + file)
   })
