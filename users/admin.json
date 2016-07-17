@@ -1,0 +1,10 @@
+{
+    "username": "admin",
+    "password": "webhookadmin",
+    "access": {
+        "webhook": {
+            "create": true,
+            "edit": true
+        }
+    }
+}
