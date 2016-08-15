@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/jayinton/jgg.git",
+   "branch": "jgg",
+   "script": "cd /var/www/jgg2 && make sync-jgg"
+}
+

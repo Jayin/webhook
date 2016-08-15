@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/leens/aetv.git",
+   "branch": "master",
+   "script": "cd /var/www/template_websites/aetv && git pull origin master"
+}
+

@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url":"https://git.coding.net/jayinton/zhuangbi.git",
+   "branch": "master",
+   "script": "cd /var/www/h5/zb && make sync-remote"
+}
+

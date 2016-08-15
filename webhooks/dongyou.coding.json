@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/jayinton/dongyou.git",
+   "branch": "master",
+   "script": "cd /var/www/h5/dongyou && git pull origin master && make clean-runtime"
+}
+

@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/zhlhuang/tea.git",
+   "branch": "dev",
+   "script": "cd /home/docker-www/tea && git pull coding dev && make clean-runtime"
+}
+

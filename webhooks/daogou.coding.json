@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/zhutibang/yikatong-daogou.git",
+   "branch": "master",
+   "script": "cd /var/www/domains/daogou.zhutibang.cn && git pull origin master && make clean-runtime"
+}
+

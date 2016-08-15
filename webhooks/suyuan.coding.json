@@ -1,0 +1,7 @@
+{
+   "platform": "coding",
+   "https_url": "https://git.coding.net/jayinton/suyuan.git",
+   "branch": "master",
+   "script": "cd /var/www/domains/suyuan.zhutibang.cn && git pull origin master && make clean-runtime"
+}
+
