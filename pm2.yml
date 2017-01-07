@@ -1,6 +1,6 @@
 #config detail => http://pm2.keymetrics.io/docs/usage/application-declaration/#switching-environments
 apps:
-  - script   : './bin/www'
+  - script   : 'node ./bin/www'
     name     : 'webhook'
     instances: 1
     exec_mode: cluster
