@@ -1,7 +1,0 @@
-{
-   "platform": "coding",
-   "https_url": "https://git.coding.net/jayinton/yjj.git",
-   "branch": "develop",
-   "script": "cd /var/www/domains/yjj.zhutibang.cn && git pull origin develop && make clean-runtime"
-}
-

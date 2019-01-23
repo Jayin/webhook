@@ -1,7 +1,0 @@
-{
-   "platform": "coding",
-   "https_url": "https://git.coding.net/jayinton/fanwep2p.git",
-   "branch": "master",
-   "script": "cd /var/www/h5/fanwep2p && make sync-remote"
-}
-

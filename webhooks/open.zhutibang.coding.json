@@ -1,7 +1,0 @@
-{
-   "platform": "coding",
-   "https_url": "https://git.coding.net/zhlhuang/open.git",
-   "branch": "master",
-   "script": "cd /var/www/domains/open.zhutibang.cn && git pull origin master"
-}
-

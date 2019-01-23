@@ -1,7 +1,0 @@
-{
-   "platform": "coding",
-   "https_url": "https://git.coding.net/leens/templatewebsite.git",
-   "branch": "master",
-   "script": "cd /var/www/h5/templatewebsite && git pull origin master"
-}
-
