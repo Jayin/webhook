@@ -12,6 +12,13 @@ router.post('/handle/:platform/push', function (req, res, next) {
   var branch = parseResult.branch
   var https_url = parseResult.https_url
 
+  if (event === 'ping'){
+    res.status(200).json({
+      msg: 'PING OK'
+    })
+    return
+  }
+
   if (event === 'push') {
     var config = webhook.getWebhookConfig(platform, https_url, branch)
     if (config) {
@@ -21,18 +28,25 @@ router.post('/handle/:platform/push', function (req, res, next) {
             msg: 'cmd:' + err.cmd + ' NOT work!'
           })
           return
+        }else{
+          res.status(200).json({
+            msg: 'ok',
+            match: config
+          })
         }
-        res.status(200).json({
-          msg: 'ok',
-          match: config
-        })
       })
     } else {
       res.status(404).json({
         msg: '找不到webhook配置'
       })
     }
+
+    return
   }
+
+  res.status(404).json({
+    msg: '未知事件'
+  })
 })
 
 //version and webhook config
