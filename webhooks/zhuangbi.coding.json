@@ -1,7 +1,7 @@
 {
    "platform": "coding",
-   "https_url":"https://git.coding.net/jayinton/zhuangbi.git",
-   "branch": "master",
+   "https_url":"https://git.coding.net/jayinton/ztbopen.git",
+   "branch": "develop",
    "script": "ls"
 }
 

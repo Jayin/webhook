@@ -6,7 +6,7 @@ var parse = function(req){
     platform: 'coding',
     https_url: req.body.repository.clone_url,
     event: req.header('X-Coding-Event').toLowerCase(),
-    branch: req.body.repository.default_branch
+    branch: req.body.ref || ''
   }
 }
 
